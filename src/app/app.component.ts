@@ -7,5 +7,10 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  constructor(formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder) {}
+
+  public whisktForm = this.formBuilder.group({
+    name: [''],
+    age: [''] // jak typowac?
+  })
 }
