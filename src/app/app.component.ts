@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +7,5 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+  constructor(formBuilder: FormBuilder) {}
 }
